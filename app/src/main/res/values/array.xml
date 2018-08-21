@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sortBy">
+        <item>1D</item>
+        <item>1W</item>
+        <item>1M</item>
+        <item>1Y</item>
+        <item>3Y</item>
+    </string-array>
+
+    <string-array name="title">
+        <item>Mr</item>
+        <item>Ms</item>
+        <item>Miss</item>
+        <item>Mrs</item>
+        <item>Dr</item>
+        <item>Prof</item>
+        <item>Sir</item>
+    </string-array>
+
+    <!--<item>Choose Race</item>-->
+    <string-array name="race">
+        <item>Choose Race</item>
+        <item>Black</item>
+        <item>Indian</item>
+        <item>Coloured</item>
+        <item>White</item>
+        <item>Asian</item>
+        <item>Cape Malay</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="province">
+        <item>Choose Province</item>
+        <item>Eastern Cape</item>
+        <item>Free State</item>
+        <item>Gauteng</item>
+        <item>KwaZulu-Natal</item>
+        <item>Limpopo</item>
+        <item>Mpumalanga</item>
+        <item>North West</item>
+        <item>Northern Cape</item>
+        <item>Western Cape</item>
+    </string-array>
+
+    <string-array name="countryCode">
+        <item>+27</item>
+    </string-array>
+
+    <string-array name="nationality">
+        <item>South Africa</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="raceProf">
+        <item>xxxx</item>
+        <item>yyyy</item>
+    </string-array>
+
+    <!--<item>Choose Marital Status</item>-->
+    <string-array name="maritalstatus">
+        <item>Single</item>
+    </string-array>
+
+    <!--<item>Choose Income Band</item>-->
+    <string-array name="incomeband">
+        <item>0 - 189 880</item>
+    </string-array>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp156">
+
+
+    <TextView
+        android:id="@+id/tv_shake_make_money_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp148"
+        android:layout_marginTop="@dimen/dp8"
+        android:background="@drawable/ic_background_line_shakemake_pink"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/colorGreen"
+        android:textSize="@dimen/sp_26"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_shake_make_money_top_pick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/dp16"
+        android:background="@drawable/ic_background_line_shakemake_pink"
+        android:paddingBottom="@dimen/dp4"
+        android:paddingEnd="@dimen/dp12"
+        android:paddingStart="@dimen/dp12"
+        android:paddingTop="@dimen/dp4"
+        android:text="@string/txt_top_pick"
+        android:textColor="@color/shakeMakePink"
+        android:textSize="@dimen/sp_11"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</FrameLayout>

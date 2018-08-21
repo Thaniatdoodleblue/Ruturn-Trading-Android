@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp40"
+    android:paddingTop="@dimen/dp40">
+
+    <TextView
+        android:id="@+id/tv_alert_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/dp3"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp16"
+        android:text="@string/txt_label_upload_doc_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/black" />
+
+
+    <TextView
+        android:id="@+id/tv_green_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp16"
+        android:background="@drawable/ic_reactange_border_blue"
+        android:ems="10"
+        android:gravity="center"
+        android:padding="@dimen/dp8"
+        android:text="@string/txt_label_green_card"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/homePage"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_id_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp16"
+        android:background="@drawable/ic_reactange_border_blue"
+        android:ems="10"
+        android:gravity="center"
+        android:padding="@dimen/dp8"
+        android:text="@string/txt_label_id_card"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/homePage"
+        android:textStyle="bold" />
+
+</LinearLayout>

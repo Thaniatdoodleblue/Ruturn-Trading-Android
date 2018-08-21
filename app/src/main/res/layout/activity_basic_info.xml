@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/homePage"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/homePage"
+        android:visibility="gone"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="">
+
+        <TextView
+            android:id="@+id/tv_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:fadingEdge="horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:textColor="@android:color/white"
+            android:typeface="serif" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp24">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_next"
+            android:layout_below="@+id/toolbar"
+            android:orientation="vertical"
+            android:padding="@dimen/dp16">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_header_basic_info"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@android:color/white"
+                android:typeface="monospace" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp16"
+                android:text="@string/txt_header_title_name"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/whiteTransparent"
+                android:typeface="monospace" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp8">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/spinner_title"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/title"
+                        android:theme="@style/ThemeSpinnerUnderlined"
+                        android:typeface="sans" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/et_fist_name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:hint="@string/label_firstname"
+                        android:imeOptions="actionNext"
+                        android:inputType="text|textCapSentences|textNoSuggestions"
+                        android:lines="1"
+                        android:scrollHorizontally="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/whiteTransparent"
+                        android:theme="@style/Theme.TextColor"
+                        android:typeface="monospace" />
+
+                    <EditText
+                        android:id="@+id/et_surname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:hint="@string/labekl_surname"
+                        android:imeOptions="actionNext"
+                        android:inputType="text|textCapSentences|textNoSuggestions"
+                        android:lines="1"
+                        android:paddingLeft="@dimen/dp8"
+                        android:paddingRight="@dimen/dp8"
+                        android:scrollHorizontally="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/whiteTransparent"
+                        android:theme="@style/Theme.TextColor"
+                        android:typeface="monospace" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp16"
+                android:lineSpacingExtra="@dimen/dp2"
+                android:text="@string/txt_label_otp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/whiteTransparent"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/et_mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp16"
+                android:digits="0123456789"
+                android:ellipsize="end"
+                android:hint="@string/cell_number"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="10"
+                android:scrollHorizontally="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/whiteTransparent"
+                android:theme="@style/Theme.TextColor"
+                android:typeface="monospace" />
+
+            <TextView
+                android:id="@+id/tv_error_mobile_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_error_your_cell_number_does_not_match"
+                android:textColor="@color/lightGreen"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp8"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:id="@+id/checkbox_terms_and_conditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@null"
+                    android:button="@drawable/ic_selector_checkbox"
+                    android:checked="false"
+                    android:gravity="left"
+                    android:onClick="onClick"
+                    android:padding="0dp"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_tc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp4"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:text="@string/txt_agree_text"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="@android:color/white"
+                    android:typeface="monospace" />
+
+                <ImageView
+                    android:id="@+id/image_terms_and_conditions_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp4"
+                    android:onClick="onClick"
+                    android:padding="@dimen/dp4"
+                    android:src="@drawable/ic_info"
+                    android:tint="@color/white" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp8">
+
+
+                <CheckBox
+                    android:id="@+id/checkbox_partner_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:button="@drawable/ic_selector_checkbox"
+                    android:checked="false"
+                    android:gravity="left"
+                    android:onClick="onClick"
+                    android:padding="0dp"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tv_tc_partner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp4"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:text="@string/txt_agree_text_partner"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="@android:color/white"
+                    android:typeface="monospace" />
+
+                <ImageView
+                    android:id="@+id/image_terms_and_conditions_info_partner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp4"
+                    android:onClick="onClick"
+                    android:padding="@dimen/dp4"
+                    android:src="@drawable/ic_info"
+                    android:tint="@color/white"
+                    android:visibility="visible" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_terms_conditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp16"
+                android:autoLink="all"
+                android:lineSpacingExtra="@dimen/dp2"
+                android:linksClickable="true"
+                android:onClick="onClick"
+                android:text="@string/txt_terms_policy_ack"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@android:color/white"
+                android:typeface="sans" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:onClick="onClick"
+        android:text="@string/txt_next"
+        android:textColor="@color/colorTextBlue"
+        android:typeface="sans" />
+
+</RelativeLayout>

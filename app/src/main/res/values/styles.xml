@@ -1,0 +1,183 @@
+<resources>
+
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/homePage</item>
+        <item name="actionBarStyle">@style/Theme.AppLib.ActionBar.Solid</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <style name="AppTheme.NoTitleBar" parent="AppTheme.Base">
+
+    </style>
+
+
+    <style name="animationCentreZoomInZoomOut" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/zoom_in_center</item>
+        <item name="android:windowExitAnimation">@anim/zoom_out_center</item>
+    </style>
+
+    <!-- &lt;!&ndash; Base application theme. &ndash;&gt;
+     <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+         &lt;!&ndash; Customize your theme here. &ndash;&gt;
+         <item name="colorPrimary">@color/colorPrimary</item>
+         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+         <item name="colorAccent">@color/homePage</item>
+         <item name="actionBarStyle">@style/Theme.AppLib.ActionBar.Solid</item>
+         <item name="android:typeface">serif</item>
+     </style>-->
+
+    <!--<style name="AppTheme.Base" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/homePage</item>
+        <item name="actionBarStyle">@style/Theme.AppLib.ActionBar.Solid</item>
+        <item name="android:typeface">serif</item>
+    </style>
+-->
+
+    <!--<style name="AppTheme.NoTitleBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/homePage</item>
+        <item name="actionBarStyle">@style/Theme.AppLib.ActionBar.Solid</item>
+        <item name="android:typeface">serif</item>
+    </style>-->
+
+    <style name="DialogFragmentTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowEnterAnimation">@anim/fadein</item>
+        <item name="android:windowExitAnimation">@anim/fadeout</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+
+    <style name="MobVerify" parent="@android:style/Widget.TextView"></style>
+
+    <style name="MyHint" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/homePage</item>
+
+    </style>
+
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+
+    <style name="MyPinLock" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+
+    <style name="PriceToolbar" parent="Theme.AppCompat.Light.DarkActionBar"></style>
+
+    <style name="ToolbarStyle" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">@color/toolbar_color_control_normal</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Toolbar.TitleTextResize" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">#040203</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#288FC9
+        </item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#288FC9
+        </item>
+    </style>
+
+    <style name="Theme.AppLib.ActionBar.Solid" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="titleTextStyle">@style/Theme.AppLib.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="Theme.AppLib.ActionBar.TitleTextStyle" parent="">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MyCustomtabAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Theme.TextColor" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="colorControlActivated">#FFFFFF</item>
+        <item name="colorControlHighlight">#FFFFFF</item>
+    </style>
+
+    <style name="Spinner.UnderLine" parent="Widget.AppCompat.Spinner.Underlined">
+        <item name="android:padding">0dp</item>
+    </style>
+
+
+    <style name="ThemeSpinner">
+        <item name="colorAccent">#FFF</item>
+        <item name="colorControlNormal">#FFF</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+
+    <style name="ThemeSpinnerUnderlined">
+        <item name="colorAccent">#FFFFFF</item>
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="colorControlActivated">#FFFFFF</item>
+        <item name="colorControlHighlight">#FFFFFF</item>
+    </style>
+
+    <style parent="@android:style/Widget.Spinner" name="SpinnerwithNoArrow">
+        <item name="android:background">@android:drawable/edit_text</item>
+    </style>
+
+
+    <!-- <style name="TextHighlighted" parent="@android:style/TextAppearance">
+         <item name="colorControlActivated">#FFFFFF</item>
+         <item name="colorControlHighlight">#FFFFFF</item>
+         <item name="textSize">17sp</item>
+         <item name="colorControlNormal">#FFFFFF</item>
+     </style>-->
+
+    <declare-styleable name="PasswordView">
+        <attr name="horizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+        <attr name="maxWidth" format="dimension" />
+        <attr name="maxHeight" format="dimension" />
+        <attr name="maxVScale" format="float" />
+        <attr name="maxHScale" format="float" />
+        <attr name="rows" format="integer" />
+        <attr name="cols" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="NumberPadView">
+        <attr name="backgroundColor" format="color" />
+    </declare-styleable>
+
+
+    <style name="NoStatusBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="CustomProgressBarHorizontal">
+        <item name="android:progressDrawable">@drawable/shake_progress_bar</item>
+        <item name="android:minHeight">12dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+</resources>

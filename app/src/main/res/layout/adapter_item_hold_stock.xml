@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp8"
+    android:layout_marginRight="@dimen/dp8"
+    android:layout_marginTop="@dimen/dp4"
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp4">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".6"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/image_company_info"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/dp4"
+            android:scaleType="centerInside"
+            android:src="@color/grey" />
+
+        <TextView
+            android:id="@+id/tv_company_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:typeface="sans"
+            android:layout_marginTop="@dimen/dp4"
+            android:textSize="@dimen/sp_12" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center|right"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|end"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|end"
+                android:minEms="8"
+                android:padding="@dimen/dp4"
+                android:text="@string/txt_label_invested_amount"
+                android:typeface="serif"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|end"
+                android:minEms="8"
+                android:padding="@dimen/dp4"
+                android:text="@string/total_holding"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:typeface="serif"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_invested_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="center_vertical|end"
+                android:maxLines="1"
+                android:padding="@dimen/dp4"
+                android:text="R 0.00"
+                android:textColor="@color/grey"
+                android:textSize="14sp"
+                android:typeface="serif"/>
+
+            <TextView
+                android:id="@+id/tv_holding_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:drawableLeft="@drawable/ic_arrow_drop_down_red"
+                android:gravity="center_vertical|end"
+                android:maxLines="1"
+                android:paddingRight="@dimen/dp4"
+                android:text="R 0.00"
+                android:textSize="14sp"
+                android:typeface="serif"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

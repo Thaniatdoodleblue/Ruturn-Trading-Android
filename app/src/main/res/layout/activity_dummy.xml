@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_subscribe_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="subscribe news" />
+
+    <Button
+        android:id="@+id/btn_unsubscribe_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="unsubscribe news" />
+
+
+    <Button
+        android:id="@+id/btn_subscribe_testing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="subscribe testing" />
+
+    <Button
+        android:id="@+id/btn_unsubscribe_testing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="unsubscribe testing" />
+
+    <Button
+        android:id="@+id/btn_send_testing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="SEND TEST" />
+
+    <Button
+        android:id="@+id/btn_send_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="SEND NEWS" />
+
+</LinearLayout>

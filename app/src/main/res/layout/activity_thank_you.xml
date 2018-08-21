@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="@dimen/dp32">
+
+
+    <LinearLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp32"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/txt_label_thank_you"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/homePage"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_next"
+        android:layout_below="@+id/layout_header"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_view_thanks" />
+
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginTop="@dimen/dp16"
+        android:background="@drawable/ic_background_rounded_corner_blue"
+        android:gravity="center"
+        android:minEms="7"
+        android:onClick="onClick"
+        android:paddingBottom="@dimen/dp12"
+        android:paddingTop="@dimen/dp12"
+        android:text="@string/tax_finish"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:typeface="sans" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal|bottom"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

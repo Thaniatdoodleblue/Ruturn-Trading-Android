@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#1F618D</color>
+    <color name="colorAccent">#F5B7B1</color>
+    <color name="white">#FDFEFE</color>
+    <color name="colorTextBlue">#288fc9</color>
+    <color name="homePage">#288fc9</color>
+    <color name="btnBackground">#85C1E9</color>
+    <color name="black">#17202A</color>
+    <color name="blackText">#17202A</color>
+    <color name="colorYellow">#E9EACA</color>
+    <color name="colorPink">#F0A6AB</color>
+    <color name="colorGreen">#5ADD69</color>
+    <color name="colorBlue">#288FC9</color>
+    <color name="colorBlu">#D1E7F2</color>
+    <color name="colorWhite">#F3F3F3</color>
+    <color name="errorText">#ff7878</color>
+    <color name="fileupload">#999999</color>
+    <color name="toolbar_color_control_normal">#FDFEFE</color>
+    <color name="colorRed">#EC7063</color>
+
+    <color name="mtnRed">#E74C3C</color>
+    <color name="mtnGreen">#48C9B0</color>
+    <color name="totalValue">#FFCDD2</color>
+    <color name="darkGreen">#5ADD69</color><!--74bd4c-->
+    <color name="fundGreen">#4CAF50</color>
+    <color name="disabledgreen">#8BE795</color><!--c8e4b6-->
+    <color name="colorGray">#F2F2F2</color>
+    <color name="colorDarkGray">#6A757B</color>
+    <color name="colorSDGray">#808D93</color>
+    <color name="colorMaroune">#D4415E</color>
+    <color name="colorBlack">#040203</color>
+    <color name="colorPinkishRed">#FC415C</color>
+    <color name="colorlightBlue">#2D9DDC</color>
+    <color name="colorTabUnselected">#54A5D4</color>
+    <color name="colorTabSelected">#FFFFFF</color>
+    <color name="whiteTransparent">#95FFFFFF</color>
+
+    <color name="grey">#D0D3D4</color>
+    <color name="lightGreen">#49C786</color>
+    <color name="favourite_yellow">#ffe17a</color>
+    <color name="filterGreen">#22b600</color>
+    <color name="filterYellow">#ffe9a4</color>
+    <color name="filterBlue">#126fad</color>
+    <color name="lightBlue">#D4E9F4</color>
+    <color name="colorLightGray">#f5f6f6</color>
+    <color name="shakeMakePink">#ff0043</color>
+
+</resources>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shakeMakePink">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_gravity="center"
+                    android:src="@drawable/shakenmake" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/dp16"
+                    android:layout_marginStart="@dimen/dp16"
+                    android:gravity="center"
+                    android:text="@string/shake_make_instruction"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/dp16"
+                    android:layout_marginStart="@dimen/dp16"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:gravity="center"
+                    android:text="How to play:"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/dp120"
+                        android:layout_height="@dimen/dp120"
+                        android:layout_margin="@dimen/dp8"
+                        android:background="@drawable/ic_rounded_corner_white">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:paddingEnd="@dimen/dp8"
+                            android:paddingStart="@dimen/dp8"
+                            android:text="Select the group of shares."
+                            android:textColor="#9b9b9b"
+                            android:textSize="@dimen/sp_12" />
+
+                        <TextView
+                            android:id="@+id/num1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_green_corner_circle"
+                            android:gravity="start"
+                            android:paddingStart="@dimen/dp4"
+                            android:paddingEnd="@dimen/dp12"
+                            android:paddingTop="@dimen/dp4"
+                            android:text="  1"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_12"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/dp120"
+                        android:layout_height="@dimen/dp120"
+                        android:layout_margin="@dimen/dp8"
+                        android:background="@drawable/ic_rounded_corner_white">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:paddingEnd="@dimen/dp8"
+                            android:paddingStart="@dimen/dp8"
+                            android:text="@string/shake_make_instruction_two"
+                            android:textColor="#9b9b9b"
+                            android:textSize="@dimen/sp_12" />
+
+                        <TextView
+                            android:id="@+id/num2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_green_corner_circle"
+                            android:gravity="start"
+                            android:paddingStart="@dimen/dp4"
+                            android:paddingEnd="@dimen/dp12"
+                            android:paddingTop="@dimen/dp4"
+                            android:text="  2"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_12"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/dp120"
+                        android:layout_height="@dimen/dp120"
+                        android:layout_margin="@dimen/dp8"
+                        android:background="@drawable/ic_rounded_corner_white">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:paddingEnd="@dimen/dp8"
+                            android:paddingStart="@dimen/dp8"
+                            android:text="Shake your phone to activate one random company."
+                            android:textColor="#9b9b9b"
+                            android:textSize="@dimen/sp_12" />
+
+                        <TextView
+                            android:id="@+id/num3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_green_corner_circle"
+                            android:gravity="start"
+                            android:paddingStart="@dimen/dp4"
+                            android:paddingEnd="@dimen/dp12"
+                            android:paddingTop="@dimen/dp4"
+                            android:text="  3"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_12"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/dp120"
+                        android:layout_height="@dimen/dp120"
+                        android:layout_margin="@dimen/dp8"
+                        android:background="@drawable/ic_rounded_corner_white">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:paddingEnd="@dimen/dp8"
+                            android:paddingStart="@dimen/dp8"
+                            android:text="Enter your pin to buy or shake again."
+                            android:textColor="#9b9b9b"
+                            android:textSize="@dimen/sp_12" />
+
+                        <TextView
+                            android:id="@+id/num4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_green_corner_circle"
+                            android:gravity="start"
+                           android:paddingStart="@dimen/dp4"
+                            android:paddingEnd="@dimen/dp12"
+                            android:paddingTop="@dimen/dp4"
+                            android:text="  4"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_12"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/dp10"
+                android:layout_marginStart="@dimen/dp10"
+                android:gravity="center"
+                android:text="All game amounts exclude the standard transaction fees. "
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/dp16"
+                android:layout_marginStart="@dimen/dp16"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/ic_rounded_corner_card_white"
+                android:gravity="center"
+                android:padding="@dimen/dp8"
+                android:text="No share will be bought until you enter your pin. You are not being forced to buy a share at any point and are able to cancel at any stage."
+                android:textColor="@color/shakeMakePink"
+                android:textSize="@dimen/sp_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp12"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/checkbox_agree_shake_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:button="@drawable/checkbox_selector"
+                    android:checked="false"
+                    android:padding="@dimen/dp4"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/tv_terms_conditions_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp4"
+                    android:text="@string/txt_terms_and_conditions_shake_make"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_try_shake_me"
+                android:layout_width="@dimen/dp120"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_rounded_corner_card_white"
+                android:text="@string/txt_try"
+                android:textAllCaps="false"
+                android:textColor="@color/shakeMakePink"
+                android:textSize="@dimen/sp_17"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btn_cancel_shake_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp10"
+                android:layout_marginEnd="@dimen/dp10"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:gravity="center"
+                android:text="@string/txt_cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

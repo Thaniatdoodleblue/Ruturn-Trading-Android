@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/homePage"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="">
+
+        <TextView
+            android:id="@+id/tv_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:fadingEdge="horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:textColor="@android:color/white"
+            android:typeface="sans" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_bottom_submit"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp8">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp4"
+                    android:text="Gender"
+                    android:textColor="@color/homePage"
+                    android:typeface="monospace" />
+
+                <RadioGroup
+                    android:id="@+id/radio_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp8">
+
+
+                    <RadioButton
+                        android:id="@+id/radio_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp16"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:text="Male"
+                        android:typeface="serif" />
+
+                    <RadioButton
+                        android:id="@+id/radio_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:enabled="false"
+                        android:text="Female"
+                        android:typeface="serif" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp4"
+                android:lineSpacingExtra="@dimen/dp2"
+                android:padding="@dimen/dp4"
+                android:text="@string/txt_current_residential_address_notes"
+                android:textColor="@color/homePage"
+                android:textSize="14sp"
+                android:typeface="monospace" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp4">
+
+                <TextView
+                    android:id="@+id/tvClick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:lineSpacingExtra="@dimen/dp2"
+                    android:text="Click"
+                    android:textColor="@color/colorSDGray"
+                    android:typeface="monospace" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ibGooglePlaces"
+                    android:lineSpacingExtra="@dimen/dp2"
+                    android:text="to auto-populate"
+                    android:textColor="@color/colorSDGray"
+                    android:typeface="monospace" />
+
+                <ImageButton
+                    android:id="@+id/ibGooglePlaces"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tvClick"
+                    android:background="@null"
+                    android:paddingLeft="@dimen/dp6"
+                    android:paddingRight="@dimen/dp6"
+                    android:src="@drawable/ic_place_search" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ibGooglePlaces"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:layout_toEndOf="@+id/ibGooglePlaces"
+                    android:gravity="center"
+                    android:padding="@dimen/dp4"
+                    android:text="or"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorSDGray"
+                    android:typeface="monospace" />
+
+
+            </RelativeLayout>
+
+            <!--<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp0.5"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp12"
+                    android:layout_toLeftOf="@+id/tvOr"
+                    android:background="@color/colorSDGray" />
+
+                <TextView
+                    android:id="@+id/tvOr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:padding="@dimen/dp8"
+                    android:text="OR"
+                    android:textAllCaps="true"
+                    android:textColor="@color/homePage"
+                    android:textSize="14sp"
+                    android:typeface="monospace" />
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp0.5"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp12"
+                    android:layout_toRightOf="@+id/tvOr"
+                    android:background="@color/colorSDGray" />
+
+            </RelativeLayout>-->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp4"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp4"
+                android:text="@string/or_n_manual_entry_text_about_matching_address_and_bank"
+                android:textColor="@color/colorSDGray"
+                android:typeface="monospace" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp8"
+                android:paddingLeft="@dimen/dp4"
+                android:paddingRight="@dimen/dp8"
+                android:text="@string/txt_apartment_complex_number"
+                android:textColor="@color/homePage"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/et_complex_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:hint="@string/txt_enter_here"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="5"
+                android:paddingBottom="@dimen/dp12"
+                android:paddingTop="@dimen/dp12"
+                android:scrollHorizontally="true"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp8"
+                android:paddingLeft="@dimen/dp4"
+                android:paddingRight="@dimen/dp8"
+                android:text="@string/txt_apartment_complex_name"
+                android:textColor="@color/homePage"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/et_complex_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:hint="@string/txt_enter_here"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:lines="1"
+                android:paddingBottom="@dimen/dp12"
+                android:paddingTop="@dimen/dp12"
+                android:scrollHorizontally="true"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp8"
+                android:paddingLeft="@dimen/dp4"
+                android:paddingRight="@dimen/dp8"
+                android:text="@string/street_number"
+                android:textColor="@color/homePage"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/et_street_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:hint="@string/txt_enter_here"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="5"
+                android:paddingBottom="@dimen/dp12"
+                android:paddingTop="@dimen/dp12"
+                android:scrollHorizontally="true"
+                android:typeface="serif" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp8"
+                android:paddingLeft="@dimen/dp4"
+                android:paddingRight="@dimen/dp8"
+                android:text="@string/street_name"
+                android:textColor="@color/homePage"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/et_street_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:hint="@string/txt_enter_here"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:lines="1"
+                android:paddingBottom="@dimen/dp12"
+                android:paddingTop="@dimen/dp12"
+                android:scrollHorizontally="true"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp8"
+                android:paddingLeft="@dimen/dp4"
+                android:paddingRight="@dimen/dp8"
+                android:text="@string/str_suburb"
+                android:textColor="@color/homePage"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/et_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:hint="@string/txt_enter_here"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:lines="1"
+                android:paddingBottom="@dimen/dp12"
+                android:paddingTop="@dimen/dp12"
+                android:scrollHorizontally="true"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp8"
+                android:paddingLeft="@dimen/dp4"
+                android:paddingRight="@dimen/dp8"
+                android:text="City"
+                android:textColor="@color/homePage"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/et_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:hint="@string/txt_enter_here"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:lines="1"
+                android:paddingBottom="@dimen/dp12"
+                android:paddingTop="@dimen/dp12"
+                android:scrollHorizontally="true"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp8"
+                android:paddingLeft="@dimen/dp4"
+                android:paddingRight="@dimen/dp8"
+                android:text="Postal Code"
+                android:textColor="@color/homePage"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/et_postal_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:hint="@string/txt_enter_here"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="4"
+                android:paddingBottom="@dimen/dp12"
+                android:paddingTop="@dimen/dp12"
+                android:scrollHorizontally="true"
+                android:typeface="serif" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_save_and_exit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="onClick"
+            android:text="@string/txt_save_and_exit"
+            android:textColor="@android:color/white"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/homePage"
+            android:onClick="onClick"
+            android:text="@string/txt_next"
+            android:textColor="@android:color/white"
+            android:typeface="sans" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+[
+  {
+    "labelName": "ABSA",
+    "bankName": "ABSA",
+    "allowDeposit": true,
+    "accountNumber": "9214242239",
+    "branchCode": "632005",
+    "branchName": "Hyde Park",
+    "accountHolder": "First World Trader (Pty) Ltd",
+    "currency": "ZAR",
+    "country": "South Africa"
+  },
+  {
+    "labelName": "First National Bank",
+    "bankName": "First National Bank",
+    "allowDeposit": true,
+    "accountNumber": "62203342514",
+    "branchCode": "254405",
+    "branchName": "Melrose Arch",
+    "accountHolder": "First World Trader (Pty) Ltd",
+    "currency": "ZAR",
+    "country": "South Africa"
+  },
+  {
+    "labelName": "Nedbank",
+    "bankName": "Nedbank",
+    "allowDeposit": true,
+    "accountNumber": "1966501528",
+    "branchCode": "196605",
+    "branchName": "Melrose Arch",
+    "accountHolder": "First World Trader (Pty) Ltd",
+    "currency": "ZAR",
+    "country": "South Africa"
+  },
+  {
+    "labelName": "Standard Bank",
+    "bankName": "Standard Bank",
+    "allowDeposit": true,
+    "accountNumber": "420956506",
+    "branchCode": "019205",
+    "branchName": "Sandton",
+    "accountHolder": "First World Trader (Pty) Ltd",
+    "currency": "ZAR",
+    "country": "South Africa"
+  },
+  {
+    "labelName": "Investec",
+    "bankName": "Investec",
+    "allowDeposit": true,
+    "accountNumber": "50001151549",
+    "branchCode": "580105",
+    "branchName": "Sandton",
+    "accountHolder": "First World Trader (Pty) Ltd",
+    "currency": "ZAR",
+    "country": "South Africa"
+  },
+  {
+    "labelName": "Capitec",
+    "bankName": "First National Bank",
+    "allowDeposit": true,
+    "accountNumber": "62203342514",
+    "branchCode": "254405",
+    "branchName": "Melrose Arch",
+    "accountHolder": "First World Trader (Pty) Ltd",
+    "currency": "ZAR",
+    "country": "South Africa"
+  },
+  {
+    "labelName": "Other",
+    "bankName": "First National Bank",
+    "allowDeposit": true,
+    "accountNumber": "62203342514",
+    "branchCode": "254405",
+    "branchName": "Melrose Arch",
+    "accountHolder": "First World Trader (Pty) Ltd",
+    "currency": "ZAR",
+    "country": "South Africa"
+  }
+]

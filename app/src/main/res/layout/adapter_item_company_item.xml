@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvListContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp4"
+    android:layout_marginLeft="@dimen/dp8"
+    android:layout_marginRight="@dimen/dp8"
+    android:layout_marginTop="@dimen/dp4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp8">
+
+        <ImageView
+            android:id="@+id/companylogo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="#fff" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <com.robinhood.spark.SparkView
+                android:id="@+id/graph_deviation"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:spark_animateChanges="true"
+                app:spark_lineColor="@color/colorWhite"
+                app:spark_scrubEnabled="false" />
+            <!--app:spark_lineColor="@color/colorGreen"-->
+
+            <TextView
+                android:id="@+id/tv_difference_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dp4"
+                android:text="9.00"
+                android:typeface="sans" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/stockPrice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center_vertical|right"
+            android:maxLines="2"
+            android:paddingRight="@dimen/dp4"
+            android:text="R 00.00"
+            android:typeface="sans" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

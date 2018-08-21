@@ -1,0 +1,259 @@
+{
+    "msg": "Perday price",
+    "status": true,
+    "per_day": [
+        {
+            "isinCode": "ZAE000079810",
+            "close": "68800",
+            "bid": "0",
+            "offer": "0",
+            "last": "68800",
+            "updated_at": "1514358002"
+        },
+        {
+            "isinCode": "ZAE000079810",
+            "close": "68800",
+            "bid": "0",
+            "offer": "0",
+            "last": "68800",
+            "updated_at": "1514358902"
+        },
+        {
+            "isinCode": "ZAE000079810",
+            "close": "68800",
+            "bid": "0",
+            "offer": "0",
+            "last": "68800",
+            "updated_at": "1514359803"
+        },
+        {
+            "isinCode": "ZAE000079810",
+            "close": "68800",
+            "bid": "0",
+            "offer": "0",
+            "last": "68800",
+            "updated_at": "1514360702"
+        },
+        {
+            "isinCode": "ZAE000079810",
+            "close": "68800",
+            "bid": "0",
+            "offer": "0",
+            "last": "68800",
+            "updated_at": "1514361602"
+        },
+        {
+            "isinCode": "ZAE000079810",
+            "close": "68800",
+            "bid": "0",
+            "offer": "0",
+            "last": "68800",
+            "updated_at": "1514362502"
+        },
+        {
+            "isinCode": "ZAE000079810",
+            "close": "68800",
+            "bid": "0",
+            "offer": "0",
+            "last": "68800",
+            "updated_at": "1514363402"
+        },
+        {
+            "isinCode": "ZAE000079810",
+            "close": "68800",
+            "bid": "0",
+            "offer": "0",
+            "last": "68800",
+            "updated_at": "1514364303"
+        },
+        {
+            "isinCode": "ZAE000079810",
+            "close": "68800",
+            "bid": "0",
+            "offer": "0",
+            "last": "68800",
+            "updated_at": "1514365203"
+        },
+        {
+            "isinCode": "ZAE000079810",
+            "close": "68800",
+            "bid": "68456",
+            "offer": "68800",
+            "last": "68800",
+            "updated_at": "1514366102"
+        },{
+            "isinCode": "ZAE000079810",
+            "close": "68800",
+            "bid": "68456",
+            "offer": "68800",
+            "last": "68800",
+            "updated_at": "1514367002"
+        },{
+            "isinCode": "ZAE000079810",
+            "close": "68800",
+            "bid": "68456",
+            "offer": "68800",
+            "last": "68800",
+            "updated_at": "1514367902"
+        },{
+            "isinCode": "ZAE000079810",
+            "close": "68800",
+            "bid": "68460",
+            "offer": "68800",
+            "last": "68800",
+            "updated_at": "1514368802"
+        },
+        {
+            "isinCode":"ZAE000079810",
+            "close":"68800",
+            "bid":"68460",
+            "offer":"68790",
+            "last":"68800",
+            "updated_at":"1514369702"
+        },{
+            "isinCode":"ZAE000079810",
+            "close":"68800",
+            "bid":"68460",
+            "offer":"68790",
+            "last":"68800",
+            "updated_at":"1514370602"
+        },
+        {
+            "isinCode":"ZAE000079810",
+            "close":"68800",
+            "bid":"68460",
+            "offer":"68790",
+            "last":"68800",
+            "updated_at":"1514371502"
+        },
+        {
+            "isinCode":"ZAE000079810",
+            "close":"68800",
+            "bid":"68460",
+            "offer":"68790",
+            "last":"68800",
+            "updated_at":"1514372402"
+        },{
+            "isinCode":"ZAE000079810",
+            "close":"68800",
+            "bid":"68460",
+            "offer":"68790",
+            "last":"68800",
+            "updated_at":"1514373303"
+        },
+        {
+            "isinCode":"ZAE000079810",
+            "close":"68800",
+            "bid":"68460",
+            "offer":"68790",
+            "last":"68800",
+            "updated_at":"1514374202"
+        },
+        {
+            "isinCode":"ZAE000079810",
+            "close":"68800",
+            "bid":"68460",
+            "offer":"68790",
+            "last":"68800",
+            "updated_at":"1514375105"
+        },{
+            "isinCode":"ZAE000079810",
+            "close":"68800",
+            "bid":"68460",
+            "offer":"68800",
+            "last":"68800",
+            "updated_at":"1514376002"
+        },
+        {
+            "isinCode":"ZAE000079810",
+            "close":"68800",
+            "bid":"68460",
+            "offer":"68800",
+            "last":"68800",
+            "updated_at":"1514376902"
+        },{
+            "isinCode":"ZAE000079810",
+            "close":"68800",
+            "bid":"68460",
+            "offer":"68800",
+            "last":"68800",
+            "updated_at":"1514377802"
+        },
+        {
+            "isinCode":"ZAE000079810",
+            "close":"68800",
+            "bid":"68460",
+            "offer":"68800",
+            "last":"68800",
+            "updated_at":"1514378703"
+        },
+        {
+            "isinCode":"ZAE000079810",
+            "close":"68800",
+            "bid":"68460",
+            "offer":"68800",
+            "last":"68800",
+            "updated_at":"1514379602"
+        },
+        {
+            "isinCode":"ZAE000079810",
+            "close":"68800",
+            "bid":"68460",
+            "offer":"68800",
+            "last":"68800",
+            "updated_at":"1514380502"
+        },
+        {
+            "isinCode":"ZAE000079810",
+            "close":"68800",
+            "bid":"68650",
+            "offer":"68800",
+            "last":"68800",
+            "updated_at":"1514381403"
+        },
+        {
+            "isinCode":"ZAE000079810",
+            "close":"68800",
+            "bid":"68650",
+            "offer":"68800",
+            "last":"68800",
+            "updated_at":"1514382303"
+        },
+        {
+            "isinCode":"ZAE000079810",
+            "close":"68800",
+            "bid":"68650",
+            "offer":"68800",
+            "last":"68800",
+            "updated_at":"1514383202"
+        },{
+            "isinCode":"ZAE000079810",
+            "close":"68800",
+            "bid":"68650",
+            "offer":"68800",
+            "last":"68800",
+            "updated_at":"1514384102"
+        },{
+            "isinCode":"ZAE000079810",
+            "close":"68800",
+            "bid":"68650",
+            "offer":"68800",
+            "last":"68800",
+            "updated_at":"1514385002"
+        },{
+            "isinCode":"ZAE000079810",
+            "close":"68800",
+            "bid":"68650",
+            "offer":"68800",
+            "last":"68800",
+            "updated_at":"1514385902"
+        },{
+            "isinCode": "ZAE000079810",
+            "close": "68800",
+            "bid": "68650",
+            "offer": "68800",
+            "last": "68800",
+            "updated_at": "1514386803"
+        }
+    ]
+}

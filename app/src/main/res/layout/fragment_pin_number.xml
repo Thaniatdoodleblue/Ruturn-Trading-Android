@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homePage"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_forgot_pass_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:layout_margin="@dimen/dp16"
+                    android:padding="8dp"
+                    android:textColor="@color/white"
+                    android:text="Reset Pin"
+                    android:visibility="gone" />
+
+               <!-- <ImageView
+                    android:id="@+id/image_forgot_pass_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:layout_margin="@dimen/dp16"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_view_forgot_pass_code"
+                    android:visibility="gone" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_view_logo" />
+
+                    <TextView
+                        android:id="@+id/tv_pin_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp16"
+                        android:layout_marginTop="@dimen/dp8"
+                        android:gravity="center"
+                        android:typeface="monospace"
+                        android:text="@string/pinLock"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/firstDigit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dp16"
+                            android:button="@drawable/ic_selector_pass_code"
+                            android:checked="false"
+                            android:enabled="false"
+                            android:gravity="center" />
+
+                        <CheckBox
+                            android:id="@+id/secondDigit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/ic_selector_pass_code"
+                            android:checked="false"
+                            android:enabled="false"
+                            android:gravity="center" />
+
+                        <CheckBox
+                            android:id="@+id/thirdDigit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp16"
+                            android:layout_marginRight="@dimen/dp16"
+                            android:button="@drawable/ic_selector_pass_code"
+                            android:checked="false"
+                            android:enabled="false"
+                            android:gravity="center" />
+
+                        <CheckBox
+                            android:id="@+id/fourthDigit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/ic_selector_pass_code"
+                            android:checked="false"
+                            android:enabled="false"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/layout_number_pad_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/activity_finger_print"
+            android:visibility="gone" />
+    </RelativeLayout>
+</ScrollView>

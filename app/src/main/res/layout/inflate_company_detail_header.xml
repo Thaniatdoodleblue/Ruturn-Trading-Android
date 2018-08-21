@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:background="#F3F3F3"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="8dp">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/homePage"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/homePage"
+        app:layout_collapseMode="pin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="">
+
+        <TextView
+            android:id="@+id/tv_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="1"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/white"
+            android:typeface="sans" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tv_contractCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="4dp"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/image_fav"
+        tools:layout_editor_absoluteX="355dp" />
+
+    <CheckBox
+        android:id="@+id/image_fav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@null"
+        android:button="@null"
+        android:checked="false"
+        android:clickable="false"
+        android:drawablePadding="8dp"
+        android:drawableRight="@drawable/ic_selector_favourite"
+        android:gravity="center_vertical"
+        android:text="MMD"
+        android:textColor="@android:color/white"
+        android:typeface="sans"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="384dp" />
+
+    <ImageView
+        android:id="@+id/detailCompanyLogo"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="16dp"
+        android:background="#FFFFFF"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".40" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.76" />
+
+
+    <TextView
+        android:id="@+id/tv_delay_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginTop="-1dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="4dp"
+        android:paddingTop="8dp"
+        android:text="@string/txt_mins_delay"
+        android:textColor="@color/homePage"
+        android:textSize="10sp"
+        android:typeface="sans"
+        app:layout_constraintLeft_toLeftOf="@+id/mtnRate"
+        app:layout_constraintTop_toBottomOf="@+id/mtnRate"
+        app:layout_goneMarginTop="@dimen/dp4"
+        tools:layout_editor_absoluteX="124dp" />
+
+
+    <TextView
+        android:id="@+id/mtnRate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/current_price_roundedcorner"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="8dp"
+        android:singleLine="true"
+        android:text="R 12,343435"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="@+id/detailCompanyLogo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/detailCompanyLogo"
+        app:layout_constraintRight_toLeftOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/layout_closed_price2"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="8dp"
+        android:gravity="right|center"
+        android:padding="14dp"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/detailCompanyLogo"
+        app:layout_constraintRight_toLeftOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+    <TextView
+        android:id="@+id/layout_closed_price2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_background_rounded_corner_green"
+        android:drawableStart="@drawable/ic_arrow_drop_up_white"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/dp4"
+        android:text="12.00"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="@+id/detailCompanyLogo"
+        app:layout_constraintDimensionRatio="2:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/guideline"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="255dp"
+        tools:layout_editor_absoluteY="145dp" />
+
+
+    <EditText
+        android:id="@+id/enterTheStockprice"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/roundcorner_left"
+        android:ellipsize="end"
+        android:gravity="start|center"
+        android:hint="Enter amount to purchase"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:maxLength="9"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textSize="15sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="@+id/vbuyBtn"
+        app:layout_constraintEnd_toStartOf="@id/guideline1"
+        app:layout_constraintLeft_toLeftOf="@+id/detailCompanyLogo"
+        app:layout_constraintTop_toTopOf="@+id/vbuyBtn" />
+
+    <Button
+        android:id="@+id/vbuyBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rounded_corner"
+        android:enabled="false"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="BUY"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:typeface="sans"
+        app:layout_constraintDimensionRatio="2:1"
+        app:layout_constraintEnd_toEndOf="@+id/layout_closed_price2"
+        app:layout_constraintLeft_toRightOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_delay_price" />
+
+
+    <TextView
+        android:id="@+id/transAmt1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:text="Total Transaction Amount: R 0.00"
+        android:textColor="@color/homePage"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/brokrages"
+        app:layout_constraintTop_toBottomOf="@+id/enterTheStockprice"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageView
+        android:id="@+id/brokrages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="0dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_info"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/detailCompanyLogo" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+

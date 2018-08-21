@@ -1,0 +1,150 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao' // apply plugin for green dao
+apply plugin: 'io.fabric'
+
+
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+    maven { url "https://jitpack.io" }
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+
+    Properties properties = new Properties()
+    properties.load(project.rootProject.file("local.properties").newDataInputStream())
+
+    defaultConfig {
+        applicationId "com.ruturntrading"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        resValue "string", "default_id", properties.getProperty("default.id", "")
+        resValue "string", "default_subid", properties.getProperty("default.subid", "")
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    signingConfigs {
+        /*configRelease {
+            keyAlias 'ruturntrader'
+            keyPassword 'ruturntrader@123'
+            //Mention the keystore path here.
+            storeFile file('../release_keystore.jks')
+            storePassword 'ruturntrader@123'
+        }*/
+
+        configRelease {
+            keyAlias 'ruturntrader'
+            keyPassword 'doodleblue'
+            //Mention the keystore path here.
+            storeFile file('../rt_keystore.jks')
+            storePassword 'doodleblue'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.configRelease
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+greendao {
+    schemaVersion 1
+    targetGenDir 'src/main/java'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+        transitive = true
+    }
+
+    compile 'org.jsoup:jsoup:1.7.3'
+
+    // For facebook login
+    compile 'net.danlew:android.joda:2.9.9'
+    compile 'com.bluelinelabs:logansquare:1.3.6'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.miguelcatalan:materialsearchview:1.4.0'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.github.aurae.retrofit2:converter-logansquare:1.4.1'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    compile 'com.android.support:appcompat-v7:27.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:27.1.0'
+    compile 'com.android.support:cardview-v7:27.1.0'
+    compile 'com.flipboard:bottomsheet-core:1.5.3'
+    compile 'com.thoughtbot:expandablerecyclerview:1.3'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.hbb20:ccp:1.7.7'
+    compile 'com.annimon:stream:1.1.4'
+    compile 'ca.barrenechea.header-decor:header-decor:0.2.8'
+    //compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'com.google.firebase:firebase-messaging:12.0.0'
+    compile 'com.google.firebase:firebase-invites:12.0.0'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.bluelinelabs:logansquare-compiler:1.3.6'
+    compile 'io.branch.sdk.android:library:2.+'
+    //For BranchIO
+    compile 'org.greenrobot:greendao:3.2.2'
+    // For local database
+
+//    compile 'com.soundcloud.android:android-crop:1.0.1@aar'
+    compile 'com.theartofdev.edmodo:android-image-cropper:2.7.+'
+    // For crop images
+
+    compile 'com.twitter.sdk.android:twitter:3.1.1'
+    // For twitter sdk
+    compile 'com.twitter.sdk.android:twitter-core:3.1.1'
+    compile 'com.google.guava:guava:14.0.1'
+    /// added for sync adapter
+    compile 'io.reactivex.rxjava2:rxjava:2.1.3'
+    // rx java
+    compile 'com.robinhood.spark:spark:1.1.2'
+    // graph
+    compile 'com.google.android.gms:play-services-places:12.0.0'
+    // place picker
+    implementation project(':chartlib')
+    //Pin View
+    compile 'com.chaos.view:pinview:1.3.1'
+
+    //lottie animation
+    compile 'com.airbnb.android:lottie:2.5.5'
+}
+apply plugin: 'com.google.gms.google-services'

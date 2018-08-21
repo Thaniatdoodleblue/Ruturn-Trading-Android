@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homePage">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/homePage"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="">
+
+        <TextView
+            android:id="@+id/tv_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:textColor="@android:color/white"
+            android:typeface="sans" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:padding="@dimen/dp8">
+
+        <!--<ImageButton
+            android:id="@+id/ibGooglePlaces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="@dimen/dp8"
+            android:src="@drawable/ic_place_search" />-->
+
+
+        <!--<TextView
+           android:id="@+id/tvAddress"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/dp8"
+           android:paddingLeft="@dimen/dp4"
+           android:paddingRight="@dimen/dp8"
+           android:text="Your Address"
+           android:textColor="@color/white"
+           android:typeface="monospace" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp8"
+            android:paddingLeft="@dimen/dp4"
+            android:paddingRight="@dimen/dp8"
+            android:text="@string/required_email"
+            android:textColor="@color/white"
+            android:typeface="monospace" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:ellipsize="end"
+            android:hint="@string/Email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:paddingBottom="@dimen/dp12"
+            android:paddingTop="@dimen/dp12"
+            android:scrollHorizontally="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/whiteTransparent"
+            android:theme="@style/Theme.TextColor"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/tv_error_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp4"
+            android:paddingRight="@dimen/dp8"
+            android:text="@string/txt_error_label_email_incorrect"
+            android:textColor="@color/lightGreen"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp8"
+            android:paddingLeft="@dimen/dp4"
+            android:paddingRight="@dimen/dp8"
+            android:text="@string/required_cell_number"
+            android:textColor="@color/white"
+            android:typeface="monospace" />
+
+
+        <EditText
+            android:id="@+id/et_cell_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:ellipsize="end"
+            android:hint="@string/cell_number"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:lines="1"
+            android:maxLength="10"
+            android:paddingBottom="@dimen/dp12"
+            android:paddingTop="@dimen/dp12"
+            android:scrollHorizontally="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/whiteTransparent"
+            android:theme="@style/Theme.TextColor"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/tv_error_mobile_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp4"
+            android:paddingRight="@dimen/dp8"
+            android:text="@string/txt_error_your_cell_number_does_not_match"
+            android:textColor="@color/lightGreen"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp8"
+            android:paddingLeft="@dimen/dp4"
+            android:paddingRight="@dimen/dp8"
+            android:text="@string/required_rsa_id_number"
+            android:textColor="@color/white"
+            android:typeface="monospace" />
+
+        <EditText
+            android:id="@+id/et_rsa_id_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:ellipsize="end"
+            android:hint="@string/rsa_id"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="13"
+            android:paddingBottom="@dimen/dp12"
+            android:paddingTop="@dimen/dp12"
+            android:scrollHorizontally="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/whiteTransparent"
+            android:theme="@style/Theme.TextColor"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/tv_error_rsa_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp4"
+            android:paddingRight="@dimen/dp8"
+            android:text="@string/txt_error_label_id_number_incorrect"
+            android:textColor="@color/lightGreen"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:onClick="onClick"
+        android:text="@string/txt_next"
+        android:textColor="@color/colorTextBlue"
+        android:typeface="sans" />
+
+</RelativeLayout>

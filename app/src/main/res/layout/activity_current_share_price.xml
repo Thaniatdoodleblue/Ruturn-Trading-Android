@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.BuyAndSellActivity">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_sellbuy_container">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llToolBarID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/inflate_cash_invested_header" />
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:visibility="gone">
+
+                    <!--<RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_company_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/dp16"
+                            android:text="@string/jse_sol_text"
+                            android:textColor="@color/colorSDGray"
+                            android:textSize="12dp" />
+
+                        <ImageView
+                            android:id="@+id/image_company_icon"
+                            android:layout_width="120dp"
+                            android:layout_height="80dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_android_black" />
+
+                        <TextView
+                            android:id="@+id/tv_toolbar_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fadingEdge="horizontal"
+                            android:lines="1"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:maxLines="1"
+                            android:scrollHorizontally="true"
+                            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                            android:typeface="serif" />
+
+                    </RelativeLayout>-->
+                </android.support.v7.widget.Toolbar>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white">
+
+                    <TextView
+                        android:id="@+id/tvBack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/ic_back_black"
+                        android:drawablePadding="@dimen/dp4"
+                        android:padding="@dimen/dp8" />
+
+                    <ImageView
+                        android:id="@+id/image_company_icon"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@null"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/tv_company_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image_company_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/dp4"
+                        android:text="@string/jse_sol_text"
+                        android:textColor="@color/colorSDGray"
+                        android:textSize="12dp"
+                        android:typeface="serif" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp8">
+
+                    <LinearLayout
+                        android:id="@+id/llLinearLayoutInvestment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp8"
+                            android:text="@string/investedAmount"
+                            android:textColor="@color/colorSDGray"
+                            android:typeface="sans" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp8"
+                            android:text="@string/sharesPurchased"
+                            android:textColor="@color/colorSDGray"
+                            android:typeface="sans" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp8"
+                            android:text="@string/purchasedSharePrice"
+                            android:textColor="@color/colorSDGray"
+                            android:typeface="sans" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_invested_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|right"
+                            android:padding="@dimen/dp8"
+                            android:text="@string/zero_rand_value"
+                            android:textColor="@color/colorSDGray"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/tv_share_purchased"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|right"
+                            android:padding="@dimen/dp8"
+                            android:text="@string/zero_value"
+                            android:textColor="@color/colorSDGray"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/tv_purchased_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|right"
+                            android:padding="@dimen/dp8"
+                            android:text="@string/zero_rand_value"
+                            android:textColor="@color/colorSDGray"
+                            android:typeface="serif" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorYellow"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp4">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/dp8"
+                        android:text="@string/currentSharePrice"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:id="@+id/tv_current_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="@dimen/dp12"
+                        android:text="@string/zero_rand_value"
+                        android:typeface="monospace" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp8">
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/dp8"
+                            android:text="@string/profitLossPercentage"
+                            android:textColor="@color/colorSDGray"
+                            android:typeface="sans" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp8"
+                            android:text="@string/profitLossValuePerShare"
+                            android:textColor="@color/colorSDGray"
+                            android:typeface="sans" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp8"
+                            android:text="@string/profitLossValue"
+                            android:textColor="@color/colorSDGray"
+                            android:typeface="sans" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/tv_profit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|end"
+                            android:padding="@dimen/dp8"
+                            android:text="@string/zero_value"
+                            android:textColor="@color/colorSDGray"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/tv_profile_loss_per_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|end"
+                            android:padding="@dimen/dp8"
+                            android:text="@string/zero_value"
+                            android:textColor="@color/colorSDGray"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/tv_profit_loss_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|end"
+                            android:padding="@dimen/dp8"
+                            android:text="@string/zero_value"
+                            android:textColor="@color/colorSDGray"
+                            android:typeface="serif" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPink"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp8">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/totalHoldings"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_total_holding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:paddingEnd="@dimen/dp8"
+                        android:text="@string/zero_rand_value"
+                        android:typeface="monospace" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_vertical">
+
+
+                        <TextView
+                            android:id="@+id/tv_graph_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:typeface="sans" />
+
+                        <Spinner
+                            android:id="@+id/sortSpin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:entries="@array/sortBy"
+                            android:padding="4dp"
+                            android:typeface="sans">
+
+                        </Spinner>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="260dp"
+                        android:layout_marginBottom="@dimen/dp12"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/mylayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <com.github.mikephil.charting.charts.LineChart
+                                android:id="@+id/tv_line_chart"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#ffffff" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_sellbuy_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btSellButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorBlue"
+            android:text="@string/button_sell_text"
+            android:textColor="@color/colorWhite"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/btBuyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorGreen"
+            android:text="@string/button_buy_text"
+            android:textColor="@color/colorWhite"
+            android:typeface="sans" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,404 @@
+<resources>
+    <string name="app_name">Ruturn Trading</string>
+    <string name="homeSubmit">Next</string>
+    <string name="send">Resend</string>
+    <string name="cont">Continue</string>
+    <string name="done">Done</string>
+    <string name="Country"><font size="15">Country</font></string>
+
+
+    <string name="MobNumber"><font size="15">Phone Number</font></string>
+    <string name="jse_sol_text">JSE-SOL</string>
+    <string name="button_sell_text">SELL</string>
+    <string name="network_wifi">Wi-Fi</string>
+    <string name="network_mobile">Mobile</string>
+
+    <string name="Name"><font size="15">Name</font></string>
+    <string name="SureName"><font size="15">Surname</font></string>
+    <string name="Email"><font size="15">Email</font></string>
+    <string name="Id"><font size="15">RSA ID</font></string>
+    <string name="Address"><font size="15">Address</font></string>
+
+    <string name="termsCond">By signing up, your agree to the terms and conditions  privacy policy</string>
+    <string name="pinLock">Enter Pin</string>
+    <string name="newpinLock">Enter new pin</string>
+    <string name="reenternewpinLock">Enter re-enter new pin</string>
+    <string name="authentication">Authentication</string>
+    <string name="fingerMsg">Please place your finger on the fingerprint sensor</string>
+    <string name="Home1">Hi there! We need a few things before you can get started</string>
+    <string name="Home2">Ruturn Trading needs access to your contacts, device storage, SMS.</string>
+
+    <string name="investedAmount">Invested amount</string>
+    <string name="sharesPurchased">Shares purchased</string>
+    <string name="purchasedSharePrice">Purchased share price</string>
+    <string name="currentSharePrice">Current Share Price\n(Delayed 15 mins)</string>
+    <string name="totalHoldings">Total Holdings</string>
+    <string name="profitLossPercentage">Profit / (Loss) %</string>
+    <string name="profitLossValuePerShare">Profit / (Loss) P / Share</string>
+    <string name="profitLossValue">Profit / (Loss) Value</string>
+
+    <string name="button_buy_text">BUY</string>
+    <string name="Id_doc_Textview">*ID Documents (SA Citizener/ Passport Foreign Nationals)</string>
+    <string name="upload_doc_text_two">*Utility Bill, Signed lease agreement, Life insurance policy, Bank statement etc..</string>
+    <string name="banksstatemnt_upload_text">If you uploaded a bank statement as your proof of residence, you do not need to upload it here</string>
+    <string name="proof_checkbox_text">I have uploaded a bank statement under proof of residence</string>
+    <string name="otp_verificationText">An verification SMS has been sent to +975545758754 </string>
+    <string name="emai_verification_text"><font color='green'>Note:</font> If you\'ve opened your verification email on your desktop or mobile devices then please select the button above to refresh the app.</string>
+    <string name="proceed">PROCEED</string>
+
+
+    <string name="warn">Registration Incomplete: You would be able to trade an instrument - post uploading required documents."</string>
+    <string name="current_pe_ratio">Current P/E ratio (ttm)</string>
+    <string name="earning_per_share">Earning Per Share (Zar) (ttm)</string>
+    <string name="est_peg_ratio">Est. PEG Ratio</string>
+    <string name="market_cap">Market Cap (M ZAR)</string>
+
+    <string name="shared_outstanding">Shared Outstanding (M)</string>
+    <string name="price_book">Price / Book (mrq)</string>
+    <string name="price_sales">Price / Sales (ttm)</string>
+    <string name="dividend_indicated_gross_fields">Dividend Indicated Gross Yield</string>
+    <string name="next_earning_announcement">Next Earning Announcement</string>
+    <string name="last_dividend_reported">Last Dividend Reported (16-03-24)</string>
+    <string name="syr_net_dividend_growth">SYR Net Dividend Growth</string>
+    <string name="average_volume">Average Volume (30 days)</string>
+
+    <string name="log_out">LOGOUT</string>
+    <string name="total_transaction_amt">Total Transaction Amount</string>
+    <string name="enter_pin_confirm_purchase">Enter Pin to Confirm Purchase</string>
+    <string name="place_your_finger">Place Your Finger</string>
+
+    <string name="heading">ZSE swings into positive territory</string>
+    <string name="timing">May 05 2017 16:31</string>
+    <string name="note">The Zimbabwe Stock Exchange has returned to positive territory for the first time since....</string>
+    <string name="title_activity_news_description">NewsDescriptionActivity</string>
+    <string name="totalTransaction">Total Transaction Amount : R ;</string>
+    <string name="trade">MTN Group, formerly M-Cell, is a South Africa-based multinational mobile telecommunications company, operating in many African, European and Asian countries. Its head office is in Johannesburg.</string>
+    <string name="title_fee_details">Fee Details</string>
+    <string name="txt_empty_string" />
+    <string name="txt_note_add_money"> 1. To make a deposit into your Ruturn Trading Account, please select the bank from the above list,
+        which will display the correct EFT details. Then use the above reference number to make a deposit into that account.
+        \n\n2. Your deposit can take up to 48 hours to clear and show in your Ruturn Trading Wallet.
+    \n\n3. For users who bank with Capitec or another bank not listed here, please deposit into First National Bank.</string>
+    <string name="txt_menu_add_money">Add Money</string>
+    <string name="txt_menu_with_draw">Withdraw Money</string>
+    <string name="txt_menu_change_password">Change Password</string>
+    <string name="txt_menu_privacy_policy">Privacy Policy</string>
+    <string name="txt_menu_fica">FICA</string>
+    <string name="txt_menu_sars">SARS (coming soon)</string>
+    <string name="txt_menu_language">Language (coming soon)</string>
+    <string name="txt_menu_report_problem">Report a Problem</string>
+    <string name="txt_menu_submit_details"> Submit Details</string>
+    <string name="txt_menu_help_qa">FAQ</string>
+    <string name="txt_menu_terms_conditions">Terms and Conditions</string>
+    <string name="txt_menu_terms_conditions_partner">Terms and Conditions Partner</string>
+
+    <string name="txt_email_report_bug">ruturntrader@gmail.com</string>
+    <string name="hint_withdraw_money">1. While selling shares the user will not able to withdraw money right away, as money would be tied up for 3 days. However the user would be able to buy other shares.\n\n2. Requests received before 2pm Monday to Friday, will be released from our Mercantile Bank account
+    by 4pm.\n\n3. Requests received after 2pm Monday to Friday, as well as requests received on a weekend/public holidays, your funds will only be released the following business day.</string>
+    <string name="txt_menu_invite_email_friends">Invite Email Friends</string>
+    <string name="txt_menu_invite_twitter">Invite Twitter Friends</string>
+    <string name="txt_menu_invite_phone_contact">Invite Phone Contacts</string>
+    <string name="txt_menu_invite_facebook">Invite Facebook Friends</string>
+    <string name="txt_menu_send_money">Send Money (coming soon)</string>
+    <string name="txt_menu_send_share">Send Shares (coming soon)</string>
+    <string name="txt_menu_sound">Sound</string>
+    <string name="txt_menu_friend">Friend (coming soon)</string>
+    <string name="txt_menu_social">Social (coming soon)</string>
+    <string name="txt_menu_breaking_news">Breaking News</string>
+    <string name="txt_menu_jse_news">JSE Notification</string>
+    <string name="txt_menu_company_notification">Company Notification</string>
+    <string name="txt_menu_general">General</string>
+    <string name="txt_menu_social_header">Social</string>
+    <string name="txt_menu_settings">Settings</string>
+    <string name="txt_share_content">Your best buddy is using Ruturn Trading and wants you to join too.\nHere is a %1$s to our website to download the Ruturn Trading app and start trading today.\n</string>
+    <string name="txt_alert_withdrawal_notice">"Your withdrawal request has been received and will be actioned within the next few days"</string>
+    <string name="txt_fav">Favourites</string>
+    <string name="txt_label_withdraw">Enter amount to withdraw (in Rand)</string>
+    <string name="txt_fica_notes"><font color='green'>Note:</font> If you want to get your FICA documents updated, please attach the documents and Email us.\n\nSomeone will be in contact with you to discuss this further.</string>
+    <string name="txt_top_forty">Top 40</string>
+    <string name="txt_day">Best of Day</string>
+    <string name="txt_permission_request_contact">In order to invite your phone contacts we need permission to access your contact book please allow us access it.</string>
+    <string name="txt_permission_request_camera_storage">In order to upload document &amp; take pictures we need permission to access your storage,camera so please allow us access it.</string>
+    <string name="txt_start_up_header">Hi there! We need a few things from you.</string>
+    <string name="txt_start_up_content">Throughout your experience with us, we may ask for access to your Contacts, Device Storage, SMS etc. We will only ever ask for access to items that will improve your experience.</string>
+    <string name="txt_next">Next</string>
+    <string name="txt_save_and_exit">Save and Exit</string>
+    <string name="txt_terms_policy_ack">By entering your phone number and ticking the checkboxes above, you agree to all Terms and Conditions of any of the subsidiaries, execution partners and holding companies.</string>
+    <string name="txt_resend_hint">Haven\'t received the verification code yet?</string>
+    <string name="txt_agree_text">I agree to the <font color='#49C786'>Terms and Conditions</font> of Ruturn Trading</string>
+    <string name="txt_agree_text_partner">I agree to the <font color='#49C786'>Terms and Conditions</font> of the Execution Partner</string>
+    <string name="txt_header_basic_info">Welcome to Ruturn Trading!</string>
+    <string name="txt_label_cell_number">Cell Number</string>
+    <string name="txt_label_otp">You will receive a code via SMS to input in the next screen</string>
+    <string name="label_firstname">Name</string>
+    <string name="labekl_surname">Surname</string>
+    <string name="txt_error_your_cell_number_does_not_match">Please enter a valid cell number</string>
+    <string name="txt_header_title_name">Enter First Name and Surname as it appears on your ID</string>
+    <string name="alert_title_exit">Exit</string>
+    <string name="alert_message_exit">Would you like to exit?</string>
+    <string name="txt_alert_not_now">Not Now</string>
+    <string name="txt_alert_yes">Yes</string>
+    <string name="txt_mins_delay">(15 mins Delayed)</string>
+    <string name="txt_copied">copied</string>
+    <string name="txt_label_email">Just in case you forget your Pin</string>
+    <string name="txt_label_id_number">RSA ID Number</string>
+    <string name="txt_error_label_email_incorrect">Please enter a valid email address</string>
+    <string name="txt_error_label_id_number_incorrect">Please enter a valid RSA ID</string>
+    <string name="txt_error_label_id_age_limit_error">You cannot proceed any further</string>
+    <string name="txt_title_verify_mobile_number">Verify Mobile Number</string>
+    <string name="txt_title_verify_forgot_pin_otp">Verify Otp</string>
+    <string name="txt_sms_verification_label">A verification SMS has been sent to</string>
+    <string name="txt_email_verification_label">Your verification email has been sent to&#160;</string>
+    <string name="txt_label_email_resend">Haven\'t received the verification email yet?</string>
+    <string name="txt_title_email_verification">Email Verification</string>
+    <string name="txt_label_thank_you">You have been successfully registered with us</string>
+    <string name="txt_enter_newpin">Enter new pin</string>
+    <string name="txt_re_enter_newpin">Re-enter new pin</string>
+    <string name="txt_enter_pin">Enter pin</string>
+    <string name="txt_re_enter_pin">Re-enter pin</string>
+    <string name="txt_title_user_detail">User Detail</string>
+    <string name="txt_fica_upload_doc_notes">To complete the FICA step, we need a copy of your RSA ID book or card (front and back) and Bank Statement. Please complete both processes below.</string>
+    <string name="txt_label_upload_doc_title">Please select if you are using an ID Book or ID Card. A Card requires a picture of both the front and back.\n\nI have a:</string>
+    <string name="txt_label_upload">Upload</string>
+    <string name="txt_label_front">Front</string>
+    <string name="txt_label_back">Back</string>
+    <string name="title_id_card">ID Card</string>
+    <string name="txt_title_id_card_label">Please upload a colour scan or detailed photo of the front and back of your RSA ID card.\n\nIt should clearly show your details (ID Number, name, date of birth and photo).</string>
+    <string name="txt_label_complete">Complete</string>
+    <string name="txt_title_bank_statement">Please upload a bank statement. It must show your name, address and be dated within the last 3 months.</string>
+    <string name="txt_title_id_document">Please upload a color scan or detailed photo of your RSA ID Book.\n\nIt should clearly show your details (ID Number, name, date of birth and photo).</string>
+    <string name="txt_label_green_card">GREEN ID BOOK</string>
+    <string name="txt_label_id_card">Id card</string>
+    <string name="txt_upload_bank_statement">Upload Bank Statement</string>
+    <string name="title_bank_statement">Bank Statement</string>
+    <string name="txt_label_account_holder">Account Holder</string>
+    <string name="txt_label_bank_name">Bank Name</string>
+    <string name="txt_label_branch_code">Branch Code</string>
+    <string name="txt_label_branch_name">Branch Name</string>
+    <string name="txt_label_account_number">Account Number</string>
+    <string name="txt_account_type">Account Type</string>
+    <string name="txt_submit">Submit</string>
+    <string name="txt_bank_details">Banking Details</string>
+    <string name="status_complete">Upload Completed</string>
+    <string name="status_update">Update</string>
+    <string name="status_incomplete">Incomplete</string>
+    <string name="txt_suggestion_low_amount">Ruturn Trading suggests investing over R150. However you are able to continue with a smaller investment.</string>
+    <string name="txt_suggestion_out_of_trading_hours">Market Closed</string>
+    <string name="alert_title_suggestions">Ruturn Trading</string>
+    <string name="txt_procced">Proceed</string>
+    <string name="txt_confirmbtn">Confirm</string>
+    <string name="txt_alert_edit">Edit</string>
+    <string name="txt_welcome_text">FICA - It\'s your money, so no credit check!</string>
+    <string name="txt_invite"><![CDATA[Download the Ruturn Trading app & start investing today - http://ruturntrading.co.za]]></string>
+    <string name="close_price">Close : R %1$f</string>
+    <!-- <string name="open_price">Open : R %1$s</string>
+     <string name="high_price">High : R %1$s</string>
+     <string name="low_price">Low : R %1$s</string>-->
+    <string name="open_price">R %1$s</string>
+    <string name="high_price">R %1$s</string>
+    <string name="low_price">R %1$s</string>
+
+    <string name="price_text_rand_string">R %1$s</string>
+    <string name="price_text_rand">R %1$f</string>
+    <string name="txt_menu_edit_profile_one">Edit Profile 1/2</string>
+    <string name="txt_menu_edit_profile">Edit Profile</string>
+    <string name="txt_menu_edit_profile_two">Edit Profile 2/2</string>
+    <string name="txt_menu_messages">Notifications</string><!--Messages-->
+    <string name="total_holding">Total Holdings :</string>
+    <string name="txt_confirm">confirm</string>
+    <string name="zero_rand_value">R 0.00</string>
+    <string name="zero_value">0.00</string>
+    <string name="txt_alert_okay">Okay</string>
+    <string name="txt_label_invested_amount">Invested Amount :</string>
+    <string name="txt_az">A-Z</string>
+    <string name="txt_reit">REIT</string>
+    <string name="txt_big_brands">Big Brands</string>
+    <string name="txt_altx">AltX</string>
+    <!--<string name="txt_most_popular">Most Popular</string>-->
+    <string name="txt_most_popular">Popular</string>
+    <string name="txt_popular">Popular</string>
+    <string name="txt_sell_message">Your sell request is being processed.</string>
+    <string name="txt_buy_message">Your buy request is being processed.</string>
+    <string name="txt_request_progress">Your request is being processed.</string>
+    <string name="txt_title_user_registration_one">User Registration 1/3</string>
+    <string name="txt_title_user_registration_two">User Registration 2/3</string>
+    <string name="txt_title_user_registration_three">User Registration 3/3</string>
+    <string name="txt_title_update_address">Address</string>
+    <string name="generate_password">%1$s@RuturnTrader</string>
+    <string name="num_one">1</string>
+    <string name="num_two">2</string>
+    <string name="num_three">3</string>
+    <string name="num_four">4</string>
+    <string name="num_five">5</string>
+    <string name="num_six">6</string>
+    <string name="num_seven">7</string>
+    <string name="num_eight">8</string>
+    <string name="num_nine">9</string>
+    <string name="num_zero">0</string>
+    <string name="clear">C</string>
+    <string name="tax_finish">Finish</string>
+    <string name="txt_title_forgot_pin">Forgot Pin</string>
+    <string name="cell_number">Cell Number - 082 456 7891</string>
+    <string name="required_email">*Required - Email</string>
+    <string name="required_cell_number">*Required - Cell Number</string>
+    <string name="required_rsa_id_number">*Required - RSA ID Number</string>
+    <string name="rsa_id">RSA ID</string>
+    <string name="title_login">Login</string>
+    <string name="txt_upload_success">Document uploaded successfully</string>
+    <string name="alert_fica_required">Please wait your FICA docs need to be approved</string>
+    <string name="alert_full_registration_required">Please complete your full registration</string>
+    <string name="txt_report_problem_hint">Please explain in detail about the problem you are experiencing</string>
+    <string name="txt_submit_detail_hint"> Please submit your new cellphone number, ID number and email address in order for it to be updated on our system.</string>
+    <string name="txt_title_notification">Notifications</string><!--Messages-->
+
+    // Edit Profile
+    <string name="province">Province</string>
+    <string name="postcode">Postal Code</string>
+    <string name="country_residence">Country of Residence</string>
+    <string name="city_birth">City of Birth</string>
+    <string name="city">City</string>
+    <string name="nationality">Nationality</string>
+    <string name="tax">Tax Number</string>
+    <string name="tax_number">Tax Number (Optional)</string>
+    <string name="gender">Gender</string>
+    <string name="email_id">Email Id</string>
+    <string name="race">Race</string>
+    <string name="street">Street</string>
+    <string name="unit_number">Unit Number</string>
+    <string name="complex">Complex Name</string>
+    <string name="txt_main">Main</string>
+    <string name="txt_enter_here">Enter here</string>
+    <string name="txt_apartment_complex_number">Apartment/Complex Number (Optional)</string>
+    <string name="txt_apartment_complex_name">Apartment/Complex Name (Optional)</string>
+
+    <string name="txt_error_enter_unit_complex_name">Enter Unit/Complex Name &amp; Number </string>
+    <string name="txt_error_enter_unit_complex_number">Enter Unit/Complex Number</string>
+
+    <string name="txt_error_enter_apartment_complex_name">Enter Apartment/Complex Name &amp; Number </string>
+    <string name="txt_error_enter_apartment_complex_number">Enter Apartment/Complex Number</string>
+    <string name="txt_error_emptypostal_code">Enter postal code</string>
+    <string name="txt_error_postal_code">Enter valid postal code</string>
+    <string name="txt_error_street_number">Enter street number</string>
+    <string name="txt_error_street">Enter street</string>
+    <string name="txt_error_suburb">Enter suburb</string>
+    <string name="txt_error_city">Enter city</string>
+    <string name="txt_error_choose_location">Select location</string>
+    <string name="txt_error_choose_street_name">Choose StreetName</string>
+    <string name="txt_error_enter_tax_number">Enter Tax Number</string>
+    <string name="txt_error_gender">Choose gender</string>
+    <string name="txt_error_terms_condition">Please agree to all the terms and conditions</string>
+    <string name="street_number">Street Number</string>
+    <string name="street_name">Street Name</string>
+    <string name="txt_update">Update</string>
+    <string name="txt_default_amount">R 0.00</string>
+    <string name="txt_question_title">We have placed your order on the exchange.\n\nWhile you are waiting, test your knowledge?!</string>
+    <string name="txt_congrats">Congratulations!\n\nYour order has been filled.</string>
+    <string name="txt_process_failed_faq">Unfortunately your order could not filled.<u>Check FAQ Why?</u></string>
+    <string name="txt_process_failed">Unfortunately your order could not be filled at this time. This could be due to a delay with the execution partner, or if you are trading after hours.\n\nIf you are trading after hours, your order will be processed the next morning when the market opens. You will be able to view updates in your nest egg screen.</string>
+    <string name="txt_doc_pending">Your FICA Document is not yet verified!</string>
+    <string name="txt_error_first_name">Please enter first name</string>
+    <string name="txt_error_last_name">Please enter surname</string>
+    <string name="txt_authenticationbuy_failed">In order to complete buy you need to authenticate!</string>
+    <string name="txt_authenticationsell_failed">In order to complete sell you need to authenticate!</string>
+    <string name="txt_current_residential_address_notes">Residential Address - MUST match bank statement</string>
+    //Current Residential Address - MUST match bank statement
+    <string name="txt_choose_province">Choose province</string>
+    <string name="txt_error_residence_country">Choose country of residence</string>
+    <string name="txt_error_birth_city">Enter city</string>
+    <string name="txt_error_nationlity">Choose nationality</string>
+    <string name="txt_error_date_of_birth">Choose date of birth</string>
+    <string name="txt_error_race">Choose race</string>
+    <string name="txt_fica_title_rsa_id">RSA ID</string>
+    <string name="txt_success_account_details_added">Account details added successfully</string>
+    <string name="txt_successfully_account_details_added">You Banking details have been added successfully</string>
+    <string name="txt_error_withdraw">Enter amount to withdraw</string>
+    <string name="txt_default_no_number">No Number</string>
+    <string name="txt_msg_success_profile_update">Your profile update request sent successfully</string>
+    <string name="txt_hint_edit_fields">Tap here to edit following fields\n(Email ID/RSA ID/Mobile Number)</string>
+    <string name="txt_error_branch_code">Please enter 6 characters in branch code</string>
+    <string name="txt_error_branch_code_empty">Please enter branch code</string>
+    <string name="txt_error_branch_name">Please enter branch name</string>
+    <string name="txt_error_account_name">Please enter account holder name</string>
+    <string name="txt_error_account_number">Please enter account number</string>
+    <string name="txt_try_again">Try again</string>
+    <string name="txt_no_application">No Application to perform this action</string>
+    <string name="action_settings">Settings</string>
+    <string name="txt_loading">Loading</string>
+    <string name="txt_nodata">No data available</string>
+    <string name="txt_enter_further_details">Enter Further Details</string>
+    <string name="txt_email_verified">Your email has been verified</string>
+    <string name="txt_verification_pending">Verification awaiting approval</string>
+    <string name="txt_verification_pending_note">(This process can take up to 5 business days) </string>
+    //Verification Pending
+    <string name="txt_verification_success">Your FICA has been verified</string>
+    <string name="alert_message_fica_verified">Your FICA docs have been successfully verified</string>
+    <string name="txt_error_firstname">Please enter first name</string>
+    <string name="txt_error_surname">Please enter surname</string>
+    <string name="txt_hint_email">Email Address</string>
+    <string name="txt_continue">Continue</string>
+    <string name="txt_error_maxtrade">Maximum trade amount is</string>
+    <string name="txt_error_balance_low">You don\'t have enough balance</string>
+    <string name="txt_error_funds_low">You don\'t have enough funds</string>
+    <string name="txt_error_insufficient_funds">Insufficient funds</string>
+    <string name="txt_error_search_no_result">No results found</string>
+    <string name="txt_no_fav_found">No favourites added</string>
+    <string name="txt_alert_market_closed">Market currently unavailable</string>
+    <string name="txt_alert_minus_netamount">The settlement of the transaction will not cover the fee\'s associated with the transaction. Any necessary transactions fee\'s not covered will be deducted from your available cash wallet</string>
+    <string name="txt_alert_fingureprintaccess">Place your fingertip to verify</string>
+    <string name="tap_to_select_location">Tap to select location</string>
+    <string name="your_tax_number_optional">Your Tax Number (Optional)</string>
+    <string name="income_band">Annual Income Band</string>
+    <string name="first_name">First Name</string>
+    <string name="cell_numbers">Cell Number</string>
+    <string name="verify">Verify</string>
+    <string name="enter_valid_otp">Please enter valid OTP</string>
+    <string name="upload">upload</string>
+    <string name="i_bank_with">I bank with:</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="allow_deposit">Allow Deposit</string>
+    <string name="account_number">Account Number</string>
+    <string name="branch_code">Branch Code</string>
+    <string name="branch_name">Branch Name</string>
+    <string name="account_holder">Account Holder</string>
+    <string name="note_txt">Note:</string>
+    <string name="withdraw_all">Withdraw All</string>
+    <string name="submit">Submit</string>
+    <string name="reports">Reports</string>
+    <string name="add_money">Add Money</string>
+    <string name="cash">Cash :&#160;</string>
+    <string name="invested">Invested :</string>
+    <string name="hide_your_funds">Hide Your Funds</string>
+    <string name="view_investments">View Investments</string>
+    <string name="shares">Shares</string>
+    <string name="view_holdings">View Holdings</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="str_suburb">Suburb</string>
+    <string name="txt_error_buyenteramount">Please enter the amount</string>
+    <string name="txt_successfully_password">You password has been changed successfully</string>
+    <string name="txt_error_loadingJSE">Loading JSE Companies</string>
+    <string name="txt_suspend_dialog">This share has been suspended</string>
+    <string name="txt_suspend_dialog1">learn more FAQ.</string>
+    <string name="txt_suspend_dialog2">If this status persists after 24 hrs or URGENT help is required, contact</string>
+    <string name="txt_suspend_dialog3">support@ruturntrading.co.za</string>
+    <string name="txt_note_please_docs"> Note : If you have any trouble in uploading documents, please email us at </string>
+    <string name="or_n_manual_entry_text_about_matching_address_and_bank">Manually enter fields below</string>
+
+    <string name="txt_error_terms_condition_shake_me">Please agree to terms and conditions of shake make</string>
+    <string name="txt_try">Try</string>
+    <string name="txt_terms_and_conditions_shake_make">I agree to the <font color='#5ADD69'>Terms and Conditions</font> of Shake Make.</string>
+    <string name="txt_cancel">Cancel</string>
+    <string name="txt_tap_group_shares">Tap the group of shares.</string>
+    <string name="txt_tap_money_shares">Tap an amount you want to spend.</string>
+    <string name="txt_top_pick">Top Pick</string>
+    <string name="txt_shakemake_confirm_to_buy">Confirm To Buy</string>
+    <string name="txt_shake_make_shake_again">Shake Again</string>
+    <string name="txt_shake_make_reset">Reset</string>
+    <string name="txt_shake_make_exit_game">Exit Game</string>
+    <string name="txt_close">Close</string>
+    <string name="txt_shake_make_play_again">Play Again</string>
+    <string name="txt_shake_make_money_desc">The following fee\'s apply to the values in the Shake Make game. These are only estimates and will change slightly based on the final execution value.</string>
+
+    <string name="txt_shake_make_payment_sucees_msg">"Congratulations!" Your order has been filled.</string>
+    <string name="shake_make_instruction">Shake Make lets you buy shares by shaking your phone.</string>
+    <string name="shake_make_instruction_two">Select the \namount you want to spend.</string>
+</resources>

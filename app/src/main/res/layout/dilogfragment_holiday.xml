@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp8"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp6">
+
+        <TextView
+            android:id="@+id/tv_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp16"
+            android:gravity="center"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/txt_suspend_dialog" />
+
+        <TextView
+            android:id="@+id/tv_notice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/txt_suspend_dialog1"
+            android:textColor="@color/homePage" />
+
+        <TextView
+            android:id="@+id/tv_notice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/txt_suspend_dialog2" />
+
+        <TextView
+            android:id="@+id/tv_notice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp16"
+            android:gravity="center"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/txt_suspend_dialog3"
+            android:textColor="@color/homePage" />
+
+        <TextView
+            android:id="@+id/tv_alert_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/homePage"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Ok"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

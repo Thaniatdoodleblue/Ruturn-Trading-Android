@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/dp20"
+    tools:context="com.returntrader.view.activity.ShakeMakeSuccessActivity">
+
+    <TextView
+        android:id="@+id/tv_order_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Your order is being processed"
+        android:textColor="@color/shakeMakePink"
+        android:textSize="@dimen/sp_17"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cl_shake_make_container"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+
+    <!--   <ImageView
+           android:src="@drawable/shake_make_toy"
+           android:id="@+id/image_gif"
+           android:layout_width="0dp"
+           android:layout_height="0dp"
+           app:layout_constraintBottom_toTopOf="@+id/ll_container"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="@id/tv_order_status"
+           app:layout_constraintVertical_chainStyle="spread_inside"
+           android:contentDescription="@string/txt_loading" />-->
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_shake_make_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/ll_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_order_status">
+
+        <ImageView
+            android:id="@+id/image_gif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/txt_loading"
+            android:src="@drawable/shake_make_toy_eight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_optimizationLevel="all" />
+
+        <RelativeLayout
+            android:id="@+id/rv_circle_company_bg"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/image_gif"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/dp12"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@drawable/ic_background_circle_shakemake_pink"
+            app:layout_constraintBottom_toBottomOf="@+id/image_gif"
+            app:layout_constraintEnd_toEndOf="@+id/image_gif"
+            app:layout_constraintStart_toStartOf="@+id/image_gif"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.89">
+
+            <ImageView
+                android:id="@+id/img_circle_company_logo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp2"
+                android:contentDescription="@string/txt_loading" />
+        </RelativeLayout>
+
+       <!-- <ImageView
+            android:visibility="gone"
+            android:id="@+id/img_circle_company_logo"
+            android:layout_width="@dimen/dp1"
+            android:layout_height="@dimen/dp1"
+            android:layout_marginBottom="@dimen/dp16"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/txt_loading"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="@+id/image_gif"
+            app:layout_constraintEnd_toEndOf="@+id/image_gif"
+            app:layout_constraintStart_toStartOf="@+id/image_gif"
+            app:layout_constraintTop_toTopOf="@+id/image_gif"
+            app:layout_constraintVertical_bias="0.89"
+            app:layout_constraintVertical_chainStyle="spread" />-->
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/dp16"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_shake_make_container">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_shake_make_confirm_buy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/shakeMakePink"
+            app:cardCornerRadius="@dimen/dp8"
+            app:cardElevation="@dimen/dp8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_money_desc"
+            app:layout_constraintVertical_chainStyle="spread">
+
+            <Button
+                android:id="@+id/btn_next_shake_make_play_again"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="@string/txt_shake_make_play_again"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_17"
+                android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_background_line_shakemake_dark_gray"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp12"
+            android:paddingEnd="@dimen/dp20"
+            android:paddingStart="@dimen/dp20"
+            android:paddingTop="@dimen/dp12"
+            android:text="@string/txt_close"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/sp_17"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

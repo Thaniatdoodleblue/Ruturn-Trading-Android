@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/progressbarsearchview"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/recycler_mail_list_primary"
+    android:background="#ffffff"
+    android:gravity="center">
+
+    <ProgressBar
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:padding="8dp" />
+</RelativeLayout>

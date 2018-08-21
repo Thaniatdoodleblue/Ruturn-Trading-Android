@@ -1,0 +1,44 @@
+{
+  "questionList": [
+    {
+      "question": "Astral Foods Limited is the biggest poultry producer in South Africa.",
+      "answer": true
+    },
+    {
+      "question": "Cross & Blackwell belongs to Tiger Brands.",
+      "answer": true
+    },
+    {
+      "question": "Cell C is a listed company on the JSE.",
+      "answer": false
+    },
+    {
+      "question": "Shoes are an asset class.",
+      "answer": false
+    },
+    {
+      "question": "A company’s market capitalization means: The market value of a company’s outstanding shares.",
+      "answer": true
+    },
+    {
+      "question": "There are 4 stocks exchanges in South Africa.",
+      "answer": true
+    },
+    {
+      "question": "The 40 biggest SA companies make up the JSE Top 40 index.",
+      "answer": true
+    },
+    {
+      "question": "You can trade currency on the JSE?",
+      "answer": false
+    },
+    {
+      "question": "Italtile Limited is the parent company of CTM.",
+      "answer": true
+    },
+    {
+      "question": "Clicks Group Limited classifies as consumer defensive?",
+      "answer": false
+    }
+  ]
+}

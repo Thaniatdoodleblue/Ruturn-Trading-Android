@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAECEE"
+    android:orientation="vertical"
+    tools:context=".view.activity.SellStockActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_confirm"
+        android:orientation="vertical">
+
+        <include layout="@layout/inflate_cash_invested_header" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:id="@+id/toolbar_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white">
+
+                    <TextView
+                        android:id="@+id/tv_toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fadingEdge="horizontal"
+                        android:lines="1"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:maxLines="1"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                        android:typeface="serif" />
+                </android.support.v7.widget.Toolbar>
+
+                <ImageView
+                    android:id="@+id/image_company_icon"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:src="@drawable/ic_android_black" />
+
+                <TextView
+                    android:id="@+id/tv_company_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:padding="@dimen/dp4"
+                    android:text="@string/jse_sol_text"
+                    android:textColor="@color/colorSDGray"
+                    android:textSize="12dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp4">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="R"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/et_stock_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp4"
+                        android:layout_marginTop="@dimen/dp8"
+                        android:background="@drawable/ic_background_rounded_light_grey"
+                        android:gravity="center"
+                        android:hint="@string/enter_amount"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:minEms="12"
+                        android:padding="@dimen/dp8" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:background="@drawable/ic_background_rounded_grey"
+                    android:paddingBottom="@dimen/dp4"
+                    android:paddingLeft="@dimen/dp16"
+                    android:paddingRight="@dimen/dp16"
+                    android:paddingTop="@dimen/dp4"
+                    android:text="Tap to edit Rand Amount"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <android.support.design.widget.CoordinatorLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/dp16"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/main.collapsing"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    app:expandedTitleMarginEnd="8dp"
+                    app:expandedTitleMarginStart="8dp"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <!--<RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white">
+
+                        <LinearLayout
+                            android:id="@+id/toolbar_top"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.Toolbar
+                                android:id="@+id/toolbar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/white">
+
+                                <TextView
+                                    android:id="@+id/tv_toolbar_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fadingEdge="horizontal"
+                                    android:lines="1"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:maxLines="1"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                                    android:typeface="serif" />
+                            </android.support.v7.widget.Toolbar>
+
+                            <ImageView
+                                android:id="@+id/image_company_icon"
+                                android:layout_width="150dp"
+                                android:layout_height="60dp"
+                                android:layout_marginTop="@dimen/dp8"
+                                android:src="@drawable/ic_android_black" />
+
+                            <TextView
+                                android:id="@+id/tv_company_hint"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentLeft="true"
+                                android:padding="@dimen/dp4"
+                                android:text="@string/jse_sol_text"
+                                android:textColor="@color/colorSDGray"
+                                android:textSize="12dp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp4">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="R"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                                <EditText
+                                    android:id="@+id/et_stock_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp4"
+                                    android:layout_marginTop="@dimen/dp8"
+                                    android:background="@drawable/ic_background_rounded_light_grey"
+                                    android:gravity="center"
+                                    android:hint="@string/enter_amount"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="numberDecimal"
+                                    android:minEms="12"
+                                    android:padding="@dimen/dp8" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp4"
+                                android:background="@drawable/ic_background_rounded_grey"
+                                android:paddingBottom="@dimen/dp4"
+                                android:paddingLeft="@dimen/dp16"
+                                android:paddingRight="@dimen/dp16"
+                                android:paddingTop="@dimen/dp4"
+                                android:text="Tap to edit Rand Amount"
+                                android:textColor="@android:color/white"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>-->
+                </android.support.design.widget.CollapsingToolbarLayout>
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp8">
+
+
+                    <include layout="@layout/activity_card" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp8">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp8"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_transaction_cost_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="@dimen/dp16"
+                                android:drawableRight="@drawable/ic_info"
+                                android:padding="@dimen/dp4"
+                                android:text="Transaction Costs"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/tv_transaction_cost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:padding="@dimen/dp4"
+                                android:text="R 00.00"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp8"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_share_purchased"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minEms="12"
+                                android:padding="@dimen/dp4"
+                                android:text="Share Purchased"
+                                android:textColor="@color/black"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:padding="@dimen/dp4"
+                                android:text="00.00"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/black"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp8"
+                            android:background="@color/colorPink"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_total_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minEms="12"
+                                android:paddingBottom="@dimen/dp8"
+                                android:paddingLeft="@dimen/dp4"
+                                android:paddingTop="@dimen/dp8"
+                                android:text="Total Value"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/tv_total_cost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:paddingBottom="@dimen/dp8"
+                                android:paddingRight="@dimen/dp4"
+                                android:paddingTop="@dimen/dp8"
+                                android:text="R 00.00"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/colorGreen"
+        android:text="@string/txt_confirm"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="facebook_app_id">460824584300790</string>
+    <string name="fb_login_protocol_scheme">fb460824584300790</string>
+
+    <!--<string name="facebook_app_id">1696425163941946</string>
+    <string name="fb_login_protocol_scheme">fb1696425163941946</string>-->
+
+    <string name="google_places_api">AIzaSyCjS64rlB9Hv6YhesuOP6qw466OuoezDNw</string>
+
+    <!--   <string name="url_privacy_policy">http://180.151.69.138/returntrader/files/pri.html</string>
+       <string name="url_terms_condition">http://180.151.69.138/returntrader/files/term_of_use.html</string>-->
+
+    <string name="url_privacy_policy">https://docs.google.com/gview?embedded=true&amp;url=https://ruturntrading.co.za/PRIVACY&#032;POLICY.pdf</string>
+    <string name="url_terms_condition">https://docs.google.com/gview?embedded=true&amp;url=https://ruturntrading.co.za/MOBILE&#032;APPLICATION&#032;TERMS&#032;OF&#032;USE.pdf</string>
+    <string name="url_terms_condition_partner">https://docs.google.com/gview?embedded=true&amp;url=https://ruturntrading.co.za/wp-content/uploads/2017/11/FWT-TC.pdf</string>
+    <string name="url_help">https://ruturntrading.co.za/faq/?noheader=1</string>
+    <!--<string name="txt_url_app_fb_link">https://fb.me/1862570470436686</string>-->
+    <string name="txt_url_app_fb_link">https://ruturntrading.co.za/</string>
+    <string name="txt_fb_app_image_url">http://server.myspace-shack.com/d22/1024x1024.png</string>
+    <string name="txt_key_ios_firebase_client_id"></string>
+    <string name="twitter_sdk.consumer_key">QDapp1vqSFV2Dj1QO32yjyZsY</string>
+    <string name="twitter_sdk.consumer_secrete">NwcyJQfd69vLaDTUsgaV0Etv0sSVdVntElNodoSZrraq3rCe72</string>
+
+    <string name="api_url_dev">http://180.151.69.138/returntrader/index.php/</string>
+    <string name="api_url_live">http://18.195.130.204/</string>
+
+</resources>

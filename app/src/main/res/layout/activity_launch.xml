@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homePage"
+    tools:context=".view.activity.GuideActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif"
+            android:text="@string/Home1"
+            android:textSize="22sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/white"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:text="@string/Home2"
+            android:textSize="15sp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/splash_image"/>
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"
+            android:text="@string/homeSubmit"
+            android:textColor="@color/homePage"
+
+
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="130dp"
+            android:layout_height="40dp"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="#3b579d"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_fb"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Login with FB"
+                android:gravity="center|left"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

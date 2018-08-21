@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "697173819277",
+    "firebase_url": "https://ruturn-trading-a6986.firebaseio.com",
+    "project_id": "ruturn-trading-a6986",
+    "storage_bucket": "ruturn-trading-a6986.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:697173819277:android:590cfeba8b9fe897",
+        "android_client_info": {
+          "package_name": "com.ruturntrading"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "697173819277-follso5sgnok1vpgthuqj97vhl45ft2k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4_Cj_YtynoWL5wtj2A0-_IRZ7zDM0Jz8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
